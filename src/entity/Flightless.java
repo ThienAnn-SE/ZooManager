@@ -55,7 +55,7 @@ public class Flightless extends Animal {
 
     @Override
     public String toString() {
-        return String.format("ID: %s - name: %s - 2 legs - 2 swings - ability: %s - enviroment : %s - weight: %.2f", this.id, this.name, this.property, this.enviroment, this.weight
+        return String.format("ID: %s - name: %s - 2 legs - 2 swings - ability: %s - enviroment : %s - weight: %.2f kg", this.id, this.name, this.property, this.enviroment, this.weight
         );
     }
 
@@ -63,7 +63,7 @@ public class Flightless extends Animal {
     public void input() {
         System.out.println("Enter name: ");
         this.setName(ValidInput.getValidateString());
-        System.out.println("Enter weight: ");
+        System.out.println("Enter weight (kg): ");
         this.setWeight(ValidInput.getDouble());
         System.out.println("Enter ability: ");
         this.setProperty(ValidInput.getValidateString());

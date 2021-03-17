@@ -54,7 +54,7 @@ public class ValidInput {
                 do {
                     String a = sc.nextLine();
                     str = a.toLowerCase();
-                } while (!"true".equals(str) && !"false".equals(str));
+                } while (!str.equals("true") && !str.equals("false"));
                 n = Boolean.parseBoolean(str);
                 check = true;
             } catch (Exception a) {

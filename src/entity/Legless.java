@@ -55,18 +55,18 @@ public class Legless extends Animal {
 
     @Override
     public String toString() {
-        return String.format("ID: %s - name: %s - leg: 0 - ability: %s - posionous: %b - weight: %.2f", this.id, this.name, this.property, this.posionous, this.weight);
+        return String.format("ID: %s - name: %s - leg: 0 - ability: %s - posionous: %b - weight: %.2f kg", this.id, this.name, this.property, this.posionous, this.weight);
     }
 
     @Override
     public void input() {
         System.out.println("Enter name: ");
         this.setName(ValidInput.getValidateString());
-        System.out.println("Enter weight: ");
+        System.out.println("Enter weight (kg): ");
         this.setWeight(ValidInput.getDouble());
         System.out.println("Enter ability: ");
         this.setProperty(ValidInput.getValidateString());
-        System.out.println("Is it posion?");
+        System.out.println("Is it posion? (true/false)");
         this.setPosionous(ValidInput.getBoolean());
     }
 

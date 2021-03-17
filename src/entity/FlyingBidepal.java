@@ -55,7 +55,7 @@ public class FlyingBidepal extends Animal {
 
     @Override
     public String toString() {
-        return String.format("ID: %s - name: %s - 2 legs - 2 swings - ability: %s - can fly - flying height: %.2f - weight: %.2f", this.id, this.name, this.property, this.flyingHeight, this.weight);
+        return String.format("ID: %s - name: %s - 2 legs - 2 swings - ability: %s - can fly - flying height: %.2f m - weight: %.2f kg", this.id, this.name, this.property, this.flyingHeight, this.weight);
 
     }
 
@@ -63,11 +63,11 @@ public class FlyingBidepal extends Animal {
     public void input() {
         System.out.println("Enter name: ");
         this.setName(ValidInput.getValidateString());
-        System.out.println("Enter weight: ");
+        System.out.println("Enter weight (kg): ");
         this.setWeight(ValidInput.getDouble());
         System.out.println("Enter ability: ");
         this.setProperty(ValidInput.getValidateString());
-        System.out.println("Enter the flying high: ");
+        System.out.println("Enter the flying high (m): ");
         this.setHigh(ValidInput.getDouble());
     }
 

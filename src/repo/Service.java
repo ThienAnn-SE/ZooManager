@@ -11,9 +11,6 @@ import entity.FlyingBidepal;
 import entity.FourLegs;
 import entity.Legless;
 import gui.Menu;
-import repo.DAO.AnimalDao;
-import repo.DAO.DataDao;
-
 import java.util.Scanner;
 
 /**
@@ -26,8 +23,8 @@ public class Service {
     private final AnimalDao<Animal> list;
 
     public Service() {
-        this.file = new AnimalData();
-        list = new AnimalRepository(file.readFile("D:\\JavaVSProject\\ZooManager\\src\\AnimalData.txt"));
+        file = new AnimalData();
+        list = new AnimalRepository(file.readFile("D:\\JavaVSProject\\Java\\ZooManager\\src\\AnimalData.txt"));
     }
 
     public int addAnimal() {
@@ -175,7 +172,7 @@ public class Service {
 
     public void saveData() {
         try {
-            file.writeDataToFile(list.getList(), "D:\\JavaVSProject\\ZooManager\\src\\AnimalData.txt");
+            file.writeDataToFile(list.getList(), "D:\\JavaVSProject\\Java\\ZooManager\\src\\AnimalData.txt");
         } catch (Exception er) {
             System.out.println("Error");
         }

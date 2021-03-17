@@ -10,8 +10,6 @@ import entity.Flightless;
 import entity.FlyingBidepal;
 import entity.FourLegs;
 import entity.Legless;
-import repo.DAO.AnimalDao;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -21,7 +19,6 @@ import java.util.Scanner;
  */
 public class AnimalRepository implements AnimalDao<Animal> {
 
-    AnimalData file = new AnimalData();
     private ArrayList<Animal> list;
     Scanner sc = new Scanner(System.in);
 
@@ -45,7 +42,7 @@ public class AnimalRepository implements AnimalDao<Animal> {
 
     @Override
     public boolean isEmpty() {
-        return list.isEmpty();
+        return this.list.isEmpty();
     }
 
     @Override

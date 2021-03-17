@@ -1,0 +1,4 @@
+0/1/con sau/0.100000/khong co/true
+1/2/chim canh cut/15.000000/boi/duoi nuoi
+2/3/dai bang/15.000000/ko co/15.000000
+3/4/cop/65.000000/san moi/true

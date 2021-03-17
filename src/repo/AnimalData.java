@@ -10,8 +10,6 @@ import entity.Flightless;
 import entity.FlyingBidepal;
 import entity.FourLegs;
 import entity.Legless;
-import repo.DAO.DataDao;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -36,7 +34,7 @@ public class AnimalData implements DataDao<Animal> {
         } catch (FileNotFoundException er) {
             return null;
         }
-        ArrayList<Animal> list = new ArrayList<Animal>();
+        ArrayList<Animal> list = new ArrayList<>();
         BufferedReader buffer = new BufferedReader(file);
         String line;
         try {

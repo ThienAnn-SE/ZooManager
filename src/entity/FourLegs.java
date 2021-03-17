@@ -54,7 +54,7 @@ public class FourLegs extends Animal {
 
     @Override
     public String toString() {
-        return String.format("ID: %s - name: %s - leg: 4 - danger: %b - ability: %s - weight: %.2f", this.id, this.name,
+        return String.format("ID: %s - name: %s - leg: 4 - danger: %b - ability: %s - weight: %.2f kg", this.id, this.name,
                 this.danger, this.property, this.weight);
     }
 
@@ -62,11 +62,11 @@ public class FourLegs extends Animal {
     public void input() {
         System.out.println("Enter name: ");
         this.setName(ValidInput.getValidateString());
-        System.out.println("Enter weight: ");
+        System.out.println("Enter weight (kg): ");
         this.setWeight(ValidInput.getDouble());
         System.out.println("Enter ability: ");
         this.setProperty(ValidInput.getValidateString());
-        System.out.println("Is it danger?");
+        System.out.println("Is it danger? (true/false)");
         this.setDanger(ValidInput.getBoolean());
     }
 

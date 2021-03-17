@@ -11,6 +11,9 @@ import entity.FlyingBidepal;
 import entity.FourLegs;
 import entity.Legless;
 import gui.Menu;
+import repo.DAO.AnimalDao;
+import repo.DAO.DataDao;
+
 import java.util.Scanner;
 
 /**

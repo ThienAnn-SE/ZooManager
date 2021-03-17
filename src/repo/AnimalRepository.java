@@ -10,6 +10,8 @@ import entity.Flightless;
 import entity.FlyingBidepal;
 import entity.FourLegs;
 import entity.Legless;
+import repo.DAO.AnimalDao;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
